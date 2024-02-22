@@ -45,13 +45,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReferenceTypes", "Task2\Tas
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Constructors", "Task2\Task2.2-CSharpIyiProgramciSerisi\Constructors\Constructors.csproj", "{DB01137E-00F6-4BBB-AC7A-5E60C7522B4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Task2\Task2.2-CSharpIyiProgramciSerisi\Interfaces\Interfaces.csproj", "{E2237CA7-C82D-4049-A1A3-0261429B8B67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "Task2\Task2.2-CSharpIyiProgramciSerisi\Interfaces\Interfaces.csproj", "{E2237CA7-C82D-4049-A1A3-0261429B8B67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Task2\Task2.2-CSharpIyiProgramciSerisi\Generics\Generics.csproj", "{4503FB55-1D89-4B58-9C28-2619DA3D14F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generics", "Task2\Task2.2-CSharpIyiProgramciSerisi\Generics\Generics.csproj", "{4503FB55-1D89-4B58-9C28-2619DA3D14F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadingDemo1", "Task2\Task2.2-CSharpIyiProgramciSerisi\ThreadingDemo1\ThreadingDemo1.csproj", "{0E48251A-C5E6-44D4-817A-28B490900BEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreadingDemo1", "Task2\Task2.2-CSharpIyiProgramciSerisi\ThreadingDemo1\ThreadingDemo1.csproj", "{0E48251A-C5E6-44D4-817A-28B490900BEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqProject", "Task2\Task2.2-CSharpIyiProgramciSerisi\LinqProject\LinqProject.csproj", "{73381CDF-5350-486E-A50C-7180D511711F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqProject", "Task2\Task2.2-CSharpIyiProgramciSerisi\LinqProject\LinqProject.csproj", "{73381CDF-5350-486E-A50C-7180D511711F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task2.3-KodlamaioExample", "Task2.3-KodlamaioExample", "{8B74D8F1-80E2-428C-ADBE-D053B2D12F06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Task2\Task2.3-KodlamaioExample\Entities\Entities.csproj", "{DF781736-339A-4F53-A1E7-A5D8AEF0EF1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "Task2\Task2.3-KodlamaioExample\DataAccess\DataAccess.csproj", "{3EB492F5-D653-4AFE-BDCC-33FC03B3E02D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Task2\Task2.3-KodlamaioExample\Business\Business.csproj", "{AF49029D-7AB8-41C6-8BF8-CB971B6EB03D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "Task2\Task2.3-KodlamaioExample\WebApi\WebApi.csproj", "{414B3088-1627-4464-BAFB-21281031A3E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -143,6 +153,22 @@ Global
 		{73381CDF-5350-486E-A50C-7180D511711F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73381CDF-5350-486E-A50C-7180D511711F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73381CDF-5350-486E-A50C-7180D511711F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF781736-339A-4F53-A1E7-A5D8AEF0EF1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF781736-339A-4F53-A1E7-A5D8AEF0EF1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF781736-339A-4F53-A1E7-A5D8AEF0EF1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF781736-339A-4F53-A1E7-A5D8AEF0EF1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EB492F5-D653-4AFE-BDCC-33FC03B3E02D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EB492F5-D653-4AFE-BDCC-33FC03B3E02D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EB492F5-D653-4AFE-BDCC-33FC03B3E02D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EB492F5-D653-4AFE-BDCC-33FC03B3E02D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF49029D-7AB8-41C6-8BF8-CB971B6EB03D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF49029D-7AB8-41C6-8BF8-CB971B6EB03D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF49029D-7AB8-41C6-8BF8-CB971B6EB03D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF49029D-7AB8-41C6-8BF8-CB971B6EB03D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{414B3088-1627-4464-BAFB-21281031A3E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{414B3088-1627-4464-BAFB-21281031A3E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{414B3088-1627-4464-BAFB-21281031A3E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{414B3088-1627-4464-BAFB-21281031A3E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -171,6 +197,11 @@ Global
 		{4503FB55-1D89-4B58-9C28-2619DA3D14F3} = {D1F2D090-307A-4057-A0B7-7EDFE2AF0A78}
 		{0E48251A-C5E6-44D4-817A-28B490900BEB} = {D1F2D090-307A-4057-A0B7-7EDFE2AF0A78}
 		{73381CDF-5350-486E-A50C-7180D511711F} = {D1F2D090-307A-4057-A0B7-7EDFE2AF0A78}
+		{8B74D8F1-80E2-428C-ADBE-D053B2D12F06} = {8B5F00D9-3385-4D5E-A3A6-604BD0953084}
+		{DF781736-339A-4F53-A1E7-A5D8AEF0EF1D} = {8B74D8F1-80E2-428C-ADBE-D053B2D12F06}
+		{3EB492F5-D653-4AFE-BDCC-33FC03B3E02D} = {8B74D8F1-80E2-428C-ADBE-D053B2D12F06}
+		{AF49029D-7AB8-41C6-8BF8-CB971B6EB03D} = {8B74D8F1-80E2-428C-ADBE-D053B2D12F06}
+		{414B3088-1627-4464-BAFB-21281031A3E9} = {8B74D8F1-80E2-428C-ADBE-D053B2D12F06}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {48F94D38-B001-43B8-AC97-896FDF394646}
