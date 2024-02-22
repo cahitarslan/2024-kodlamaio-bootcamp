@@ -43,16 +43,18 @@ OOP için temel konular anlatılmıştır. Genel konu başlıkları şöyledir: 
 - Bu task n katmanlı mimari modeli kullanılarak yapıldı. Katmanlar Entity, DataAccess, Business class library projeleri ve Presentation katmanı olarak da WebApi projesidir.
 
 - Code first yaklaşımı ile entityframework core kullanılarak tablolar, karşılık gelen kolonlar Entity katmanında ve tablolar arası ilişkiler DataAccess katmanında belirlendi. DbContext'ten inherit edilen KodlamaioContext configürasyonları ve mapping işlemleri yapıldı. Migration oluşturuldu ve veri tabanı ayağa kaldırıldı. Tablolar arasında one to many ilişkisi bulunmaktadır. İlişkiler ve kolonlar aşağıdaki görselde mevcuttur.
+
 ![Database Relations](https://github.com/cahitarslan/2024-kodlamaio-bootcamp/assets/96558672/e94b43c2-4750-4b9b-8e25-d0a07f5d1d49)
 
 - DataAccess katmanında  abstract data access layer referansları ve entityframework core kullanıldığından Repository classları yazıldı.
+
 ![Entity&DataAcess](https://github.com/cahitarslan/2024-kodlamaio-bootcamp/assets/96558672/999e4c14-3549-417a-82df-451847e7b824)
 
-- Business katmanında abstract servisler ve manager classları yazıldı. Method dönüşleri için result yapısı implemente edildi. Fluent validation implemente edildi. Magic string'ten kaçınmak için result ve fluent validation'dan dönen bilgi ve hata mesajları ayrı classlar içerisine toplandı. Dependency injection'ı tek bir yerden yönetebilmek adına IoC implemente edildi. 
+- Business katmanında abstract servisler ve manager classları yazıldı. Method dönüşleri için result yapısı implemente edildi. Fluent validation implemente edildi. Magic string'ten kaçınmak için result ve fluent validation'dan dönen bilgi ve hata mesajları ayrı classlar içerisine toplandı. Dependency injection'ı tek bir yerden yönetebilmek adına IoC implemente edildi.
+
 ![devenv_AZ4lKK71lS](https://github.com/cahitarslan/2024-kodlamaio-bootcamp/assets/96558672/933b4115-9a74-4062-ae27-d270413d4073)
 
 - Son olarak WebApi katmanına her bir tablo için controller'lar eklendi. Entity'lerimizi dışarı açmamak adına Entity katmanında Dto nesneleri oluşturuldu. Auto Mapper implementasyonu yapıldı.  Otomatik binding map'leme işlemi için gerekli configürasyonlar MapProfile içerisinde oluşturuldu.
-
 
 ![devenv_llB38cFYhR](https://github.com/cahitarslan/2024-kodlamaio-bootcamp/assets/96558672/0b619b61-8d64-4c6d-a1af-6f5cfd76c2f4)
 
