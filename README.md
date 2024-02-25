@@ -59,3 +59,17 @@ OOP için temel konular anlatılmıştır. Genel konu başlıkları şöyledir: 
 ![devenv_llB38cFYhR](https://github.com/cahitarslan/2024-kodlamaio-bootcamp/assets/96558672/0b619b61-8d64-4c6d-a1af-6f5cfd76c2f4)
 
 - Sistem şu an sorunsuz bir şekilde çalışıyor. Siz de repoyu clone'layarak test edebilir, kodları incleyebilirsiniz. Anlamadığınız bir hususda çekinmeden Github profilimdeki discord kullanıcı adım üzerinden bana ulaşabilirsiniz.
+
+### [*Task2.4 - (Senior Level) Yazılım Geliştirici Yetiştirme Kampı*](https://www.youtube.com/watch?v=IxzdEZkwT8E&list=PLqG356ExoxZVSCbdN3SrvAAEE5pJK1cEn)
+
+nArchitecture altyapısının bir demo proje üzerinden implemente süreçleri anlatılmıştır. nArchitecture mimarisi Hexagonal arc, Onion arc. gibi mimarilerin iyi yanlarının alınarak Domain Driven Design yaklaşımının uygulandığı, genel çatının CQRS pattern'ı üzerine kurulduğu bir mimaridir.
+
+Demo projede bir araç kiralama sistemi üzerinden konular anlatılmış, implementasyonlar gerçekleştirilmiştir.
+
+Kurs sürecindeki süreçler genel manada aşağıda maddeler halinde açıklanmıştır.
+
+- Domain katmanında veri tabanındaki tablolara karşılık gelecek tablolar, Entities klasörü içerisinde farklı classlarla modellenmiştir.
+- Persistence katmanında BaseDbContext ile tablo ve colon konfigürasyonları yapılmış ve mock datalar yazılmıştır.
+- Her bir tablo için ayrı ayrı veri tabanı işlemlerinin yapıldığı repository'ler yazılmıştır.
+- Application katmanında her bir tablo için Features dizini içerisinde Commands, Queries, Dtos, Models, Profiles ve Rules dizinleri oluşturulmuş ve klasör isimlendirilmelerindeki amaçlara hizmet eden yapılar tasarlanmıştır.
+- WebAPI katmanında da swagger üzerinden yapılan işlemler test edilmiş ve sonuçları gözlemlenmiştir.
