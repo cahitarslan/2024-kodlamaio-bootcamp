@@ -1,6 +1,8 @@
 # [2024 - kodlama.io - Bootcamp](https://www.kodlama.io/p/yazilim-gelistirici-yetistirme-kampi-2024-1)  
+![alt text](https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/We86Zc3xQy6FUqhyBJJc)
+
 Bootcamp süresi boyunca verilen ödevler Task1, Task2... şeklinde klasörlenerek bu repo içerisinde paylaşılacaktır. 
-## <ins>**Task1**</ins>
+## [**Task1**](https://www.kodlama.io/courses/2440064/lectures/51846446)
 ### [*Task1.1 - 5 Saatlik C# Programlama Kampı*](https://www.youtube.com/watch?v=2EkMrrX9sYY&list=PLqG356ExoxZWfcrBP53Njxir4a-OgqRki&index=6)
 Temel C# bilgileri verilmiştir (Değişkenler, şart blokları, döngüler, fonksiyonlar; class, interface kavramları).
 Katmanlı mimari ile abstraction, dependency injection gibi kavramların tanımları ve örnekleri bulunur.
@@ -11,7 +13,7 @@ Bir dış SOAP servisin sisteme adapte edilmesi örneği yer alır.
     - **Business:** İş kurallarının bulunduğu katman.
     - **Adapters:** Mernis sisteminin adapter pattern'ı kullanılarak entegre edildiği katman.
 
-## <ins>**Task2**</ins>
+## [**Task2**](https://www.kodlama.io/courses/2440064/lectures/52015232)
 ### [*Task2.1 - C# Dersleri*](https://www.youtube.com/watch?v=mPvUodG55yc&list=PLqG356ExoxZU5keiJwuHDpXqULLffwRYD&index=3)
 C#'ın temel konuları console uygulamaları ve ek olarak genel özet için mini bir windows form recap uygulaması üzerinden anlatılmıştır. Her bir konu adıyla isimlendirilmiş bir proje altında işlenmiştir.
 - Projeler
@@ -35,3 +37,25 @@ OOP için temel konular anlatılmıştır. Genel konu başlıkları şöyledir: 
     - **Generics:** Generic class'ların nasıl oluşturulduğu List yapısının benzeri bir MyList classı üzerinden anlatılmış, arrayler kullanılarak dinamik bir veri yapısının bir bölümü oluşturularak örneklenmiştir. 
     - **ThreadingDemo1:** Thread, multithread kavramları ve çalışma mantığı bir WindowsForms uygulaması üzerinden anlatılmıştır. Asenkron programlamanın tek bir thread üstünden olabileceği gibi birden fazla thread(multithread) üzerinden de gerçekleştirilebileceği açıklanmıştır.
     - **LinqProject:** Veri tabanından liste formatında gelecek veriler simüle edilmiştir. Gelen bu verilerin nasıl filtreleneceği önce algoritmik olarak ardından linq kullanılarak örneklenmiş, bu esnada linqin delegateler üzerinden nasıl kullanılacağı açıklanmıştır.
+### [*Task2.3 - Course, Category, Instructor Tabloları ve CRUD İşlemleri*](https://www.kodlama.io/courses/2440064/lectures/52015386)
+![WebApi](https://github.com/cahitarslan/2024-kodlamaio-bootcamp/assets/96558672/d37988ef-5939-4f71-ba5c-47218e80b01e)
+
+- Bu task n katmanlı mimari modeli kullanılarak yapıldı. Katmanlar Entity, DataAccess, Business class library projeleri ve Presentation katmanı olarak da WebApi projesidir.
+
+- Code first yaklaşımı ile entityframework core kullanılarak tablolar, karşılık gelen kolonlar Entity katmanında ve tablolar arası ilişkiler DataAccess katmanında belirlendi. DbContext'ten inherit edilen KodlamaioContext configürasyonları ve mapping işlemleri yapıldı. Migration oluşturuldu ve veri tabanı ayağa kaldırıldı. Tablolar arasında one to many ilişkisi bulunmaktadır. İlişkiler ve kolonlar aşağıdaki görselde mevcuttur.
+
+![Database Relations](https://github.com/cahitarslan/2024-kodlamaio-bootcamp/assets/96558672/e94b43c2-4750-4b9b-8e25-d0a07f5d1d49)
+
+- DataAccess katmanında  abstract data access layer referansları ve entityframework core kullanıldığından Repository classları yazıldı.
+
+![Entity&DataAcess](https://github.com/cahitarslan/2024-kodlamaio-bootcamp/assets/96558672/999e4c14-3549-417a-82df-451847e7b824)
+
+- Business katmanında abstract servisler ve manager classları yazıldı. Method dönüşleri için result yapısı implemente edildi. Fluent validation implemente edildi. Magic string'ten kaçınmak için result ve fluent validation'dan dönen bilgi ve hata mesajları ayrı classlar içerisine toplandı. Dependency injection'ı tek bir yerden yönetebilmek adına IoC implemente edildi.
+
+![devenv_AZ4lKK71lS](https://github.com/cahitarslan/2024-kodlamaio-bootcamp/assets/96558672/933b4115-9a74-4062-ae27-d270413d4073)
+
+- Son olarak WebApi katmanına her bir tablo için controller'lar eklendi. Entity'lerimizi dışarı açmamak adına Entity katmanında Dto nesneleri oluşturuldu. Auto Mapper implementasyonu yapıldı.  Otomatik binding map'leme işlemi için gerekli configürasyonlar MapProfile içerisinde oluşturuldu.
+
+![devenv_llB38cFYhR](https://github.com/cahitarslan/2024-kodlamaio-bootcamp/assets/96558672/0b619b61-8d64-4c6d-a1af-6f5cfd76c2f4)
+
+- Sistem şu an sorunsuz bir şekilde çalışıyor. Siz de repoyu clone'layarak test edebilir, kodları incleyebilirsiniz. Anlamadığınız bir hususda çekinmeden Github profilimdeki discord kullanıcı adım üzerinden bana ulaşabilirsiniz.
